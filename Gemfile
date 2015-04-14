@@ -35,6 +35,10 @@ gem "twitter-bootstrap-rails" #just using the css ones. We'll overwite stuff in 
 
 ### OTHER
 
+#using Devise for auth so we can use Gatech CAS
+gem 'devise'
+gem 'devise_cas_authenticatable'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

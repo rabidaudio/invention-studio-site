@@ -31,15 +31,26 @@ static pages:
 
 Members area:
 
-  email archive
-  directory
-  task list
-  request equipment
-  wishlist
-  schedule
-  locker diagram
-  training
-  workshops
-  hr links
-  social
-  equipment wiki
+- email archive
+- directory
+- task list
+- request equipment
+- wishlist
+- schedule
+- locker diagram
+- training
+- workshops
+- hr links
+- social
+- equipment wiki
+
+
+https://coderwall.com/p/6bmygq/heroku-rails-bower
+
+### CAS
+
+https://faq.oit.gatech.edu/content/using-cas-secure-your-website-campus-access-only
+
+http://libcas.sourceforge.net/?id=casintro
+
+https://github.com/nbudin/devise_cas_authenticatable
