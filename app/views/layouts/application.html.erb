@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>InventionStudioSite</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+  <meta name="description" content="The Invention Studio is student-run design-build-play space open to all Georgia Tech students. Use of the studio is free for all students, faculty and staff of Georgia Tech, regardless of year, major, or prior experience.">
+  <!-- <meta name="author" content=""> -->
+  <title>Invention Studio at Georgia Tech</title>
+  <%= stylesheet_link_tag "application", params[:controller], :media => "all", 'data-turbolinks-track' => true  %>
+  <%= javascript_include_tag "application", params[:controller], 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>

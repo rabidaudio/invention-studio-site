@@ -13,5 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
-/////  = require twitter/bootstrap
-//= require_tree .
+//= require turbolinks
+//= require startbootstrap-agency/js/agency
+//= require startbootstrap-agency/js/cbpAnimatedHeader
+//= require startbootstrap-agency/js/classie
+//= require fullcalendar/dist/fullcalendar

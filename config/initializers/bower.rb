@@ -1,0 +1,33 @@
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components')
+
+# We don't want the default of everything that isn't js or css, because it pulls too many things in
+# Rails.application.config.assets.precompile.shift
+
+#https://coderwall.com/p/6bmygq/heroku-rails-bower
+
+Rails.application.config.assets.precompile << Proc.new do |path|
+  if path =~ /\.(css|js)\z/
+    full_path = Rails.application.assets.resolve(path).to_path
+    app_assets_path = Rails.root.join('app', 'assets').to_path
+    if full_path.starts_with? app_assets_path
+      puts ">>>>"+full_path
+      true
+    else
+      puts "skipping "+full_path
+    end
+  else
+    false
+  end
+end
+
+# Explicitly register the extensions we are interested in compiling
+Rails.application.config.assets.precompile.push(Proc.new do |path|
+  File.extname(path).in? [
+    '.html', '.erb', '.slim',                 # Templates
+    '.png',  '.gif', '.jpg', '.jpeg', '.svg', # Images
+    '.eot',  '.otf', '.svc', '.woff', '.ttf', # Fonts
+  ]
+end)
+
+
+# TODO: include all my js+css in app/assets, and search through them, including all referenced files too

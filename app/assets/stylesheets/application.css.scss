@@ -10,9 +10,14 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
  *= require_self
  *= require bootstrap_and_overrides
+
+ *** Bower Assets ***
+
+ *= require startbootstrap-agency/css/agency
+ *= require fullcalendar/dist/fullcalendar
+ *= require fullcalendar/dist/fullcalendar.print
  */
 
 @import "font-awesome-sprockets";

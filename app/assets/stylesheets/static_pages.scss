@@ -2,3 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+header {
+  background-image: image-url("header-bg-IS-blurry.jpg"); //url(images/header-bg-IS-blurry.jpg);
+}
+
+#calendar {
+    width: 100%;
+    margin: 0 auto;
+}
