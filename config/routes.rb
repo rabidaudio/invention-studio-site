@@ -5,11 +5,13 @@ Rails.application.routes.draw do
 
   get 'secrets' => 'static_pages#secure_page'
 
-  # devise_scope :user do
-  #   get "sign_out", to: "devise/sessions#destroy"
-  # end
+  devise_scope :user do
+    get "sign_out", to: "devise/sessions#destroy"
+  end
 
   resources :pages
+
+  get '/:permalink', to: 'pages#show' #, constraints: { permalink: /\d.+/ }
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
