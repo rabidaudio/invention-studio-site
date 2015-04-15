@@ -33,6 +33,8 @@ gem 'slim-rails', '~> 3.0.1'
 gem 'font-awesome-sass'
 gem "twitter-bootstrap-rails" #just using the css ones. We'll overwite stuff in our own stylesheets
 
+gem 'redcarpet'
+
 ### OTHER
 
 #using Devise for auth so we can use Gatech CAS
